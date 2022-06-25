@@ -41,21 +41,26 @@ function Navbar(props) {
       <Typography
         variant="h6"
         sx={{
-          my: 2,
           display: "flex",
           justifyContent: "space-around",
           alignItems: "center",
           fontSize: 15,
         }}
       >
-        ExploreCinema
+        Inspect Movies
         <IconButton
           color="inherit"
           aria-label="close drawer"
           edge="start"
           sx={{ mr: 2, display: { sm: "none" } }}
         >
-          <CloseIcon />
+          <CloseIcon
+            sx={{
+              display: "flex",
+              justifyContent: "flex-end",
+              alignItems: "flex-end",
+            }}
+          />
         </IconButton>
       </Typography>
       <Divider />
@@ -103,6 +108,16 @@ function Navbar(props) {
           </IconButton>
           <Typography
             variant="h6"
+            sx={{
+              display: { sm: "none" },
+              margin: "auto",
+            }}
+          >
+            Inspect Movies
+          </Typography>
+
+          <Typography
+            variant="h6"
             component="div"
             sx={{
               flexGrow: 1,
@@ -110,7 +125,7 @@ function Navbar(props) {
             }}
           >
             <Link className="Link" to="/trending">
-              ExploreCinema
+              Inspect Movies
             </Link>
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
