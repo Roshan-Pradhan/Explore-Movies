@@ -24,6 +24,7 @@ const TvSeries = () => {
 
   useEffect(() => {
     movies();
+    // eslint-disable-next-line
   }, [page, genreforURL]);
   return (
     <>
